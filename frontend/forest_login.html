@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Login</title>
+    <link rel="stylesheet" href="forest_styles.css">
+</head>
+<body>
+    <!-- Fondo del bosque -->
+    <div class="forest-bg">
+        <div class="tree tree1"></div>
+        <div class="tree tree2"></div>
+        <div class="tree tree3"></div>
+        <div class="tree tree4"></div>
+        <div class="tree tree5"></div>
+        <div class="tree tree6"></div>
+        
+        <div class="fog fog1"></div>
+        <div class="fog fog2"></div>
+    </div>
+
+    <!-- Hojas flotantes -->
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+
+    <!-- Contenedor del login -->
+    <div class="login-container">
+        <div class="login-header">
+            <h1 id="formTitle">Forest Login</h1>
+            <p id="formSubtitle">Ingresa a tu cuenta en el bosque digital</p>
+        </div>
+        
+        <!-- Formulario de Login -->
+        <form id="loginForm" class="auth-form">
+            <div class="form-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required placeholder="Ingresa tu usuario">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
+            </div>
+            
+            <button type="submit" class="login-btn" id="authBtn">Iniciar Sesión</button>
+        </form>
+        
+        <!-- Formulario de Registro -->
+        <form id="registerForm" class="auth-form register-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="regFirstName">Nombre</label>
+                    <input type="text" id="regFirstName" name="firstName" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="regLastName">Apellido</label>
+                    <input type="text" id="regLastName" name="lastName" required placeholder="Tu apellido">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" name="email" required placeholder="tu@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="regUsername">Usuario</label>
+                <input type="text" id="regUsername" name="username" required placeholder="Elige un nombre de usuario">
+            </div>
+            
+            <div class="form-group">
+                <label for="regPassword">Contraseña</label>
+                <input type="password" id="regPassword" name="password" required placeholder="Crea una contraseña segura">
+                <div class="password-strength">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="strength-text" id="strengthText"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Repite tu contraseña">
+            </div>
+            
+            <div class="terms-checkbox">
+                <input type="checkbox" id="termsAccept" required>
+                <label for="termsAccept">Acepto los <a href="#" id="termsLink">términos y condiciones</a> del bosque digital</label>
+            </div>
+            
+            <button type="submit" class="login-btn" id="regBtn">Crear Cuenta</button>
+        </form>
+        
+        <div class="forgot-password" id="forgotSection">
+            <a href="#" id="forgotLink">¿Olvidaste tu contraseña?</a>
+        </div>
+        
+        <div class="auth-toggle">
+            <p id="toggleText">¿No tienes una cuenta?</p>
+            <button type="button" id="toggleAuth">Crear Cuenta</button>
+        </div>
+    </div>
+
+    <script src="forest_script.js"></script>
+</body>
+</html><
